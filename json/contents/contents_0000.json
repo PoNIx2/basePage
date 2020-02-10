@@ -1,0 +1,41 @@
+{
+    "contents": [
+        {"tag": "div", "parent": ".main", "appendType": "clear", "extend": {"class": ["content1"]}},
+            {"tag": "h3", "parent": ".content1", "extend": {"text": "p要素"}},
+            {"tag": "p", "parent": ".content1", "extend": {"text": "コピーテキスト"}}
+        ,
+        {"tag": "div", "parent": ".main", "extend": {"class": ["content4"]}},
+        {"tag": "h3", "parent": ".content4", "extend": {"text": "input要素"}},
+        {"tag": "p", "parent": ".content4", "extend": {"class": ["alertP"], "text": "click→"}},
+        {"tag": "input", "parent": ".alertP", "extend": {
+            "data": {"click": "コピーテキスト"},
+            "event": {"onclick": "clickEvent"}, "type": "button", "value": "click mi"}}
+        ,
+        {"tag": "div", "parent": ".main", "extend": {"class": ["content2"]}},
+            {"tag": "h3", "parent": ".content2", "extend": {"text": "ul要素"}},
+            {"tag": "ul", "parent": ".content2", "extend": {"class": ["content2_ul"]}},
+                {"tag": "li", "parent": ".content2_ul", "extend": {"text": "コピーテキスト"}},
+                {"tag": "li", "parent": ".content2_ul", "extend": {"text": "コピーテキスト"}},
+                {"tag": "li", "parent": ".content2_ul", "extend": {"text": "コピーテキスト"}},
+                {"tag": "li", "parent": ".content2_ul", "extend": {"text": "コピーテキスト"}},
+                {"tag": "li", "parent": ".content2_ul", "extend": {"text": "コピーテキスト"}}
+        ,
+        {"tag": "div", "parent": ".main", "extend": {"class": ["content3"]}},
+            {"tag": "h3", "parent": ".content3", "extend": {"text": "table要素"}},
+            {"tag": "table", "parent": ".content3", "extend": {"class": ["content3_table"]}},
+                {"tag": "tr", "parent": ".content3_table", "extend": {"class": ["content3_tr1"]}},
+                    {"tag": "td", "parent": ".content3_tr1", "extend": {"text": "コピーテキスト"}},
+                    {"tag": "td", "parent": ".content3_tr1", "extend": {"text": "コピーテキスト"}},
+                    {"tag": "td", "parent": ".content3_tr1", "extend": {"text": "コピーテキスト"}},
+                {"tag": "tr", "parent": ".content3_table", "extend": {"class": ["content3_tr2"]}},
+                    {"tag": "td", "parent": ".content3_tr2", "extend": {"text": "コピーテキスト"}},
+                    {"tag": "td", "parent": ".content3_tr2", "extend": {"text": "コピーテキスト"}},
+                    {"tag": "td", "parent": ".content3_tr2", "extend": {"text": "コピーテキスト"}},
+                {"tag": "tr", "parent": ".content3_table", "extend": {"class": ["content3_tr3"]}},
+                    {"tag": "td", "parent": ".content3_tr3", "extend": {"text": "コピーテキスト"}},
+                    {"tag": "td", "parent": ".content3_tr3", "extend": {"text": "コピーテキスト"}},
+                    {"tag": "td", "parent": ".content3_tr3", "extend": {"text": "コピーテキスト"}}
+        ,
+        {"tag": "span", "parent": "h3", "extend": {"text": "☆"}}
+    ]
+}

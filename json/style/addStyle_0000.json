@@ -1,0 +1,16 @@
+{
+    "contents": [
+        {
+            "tag": "style", "parent": ".head", "extend": {
+                "class": ["addStyle1"],
+                "text": ".header, .footer {background: #000000;color: #ffffff;}"
+            }
+        },
+        {
+            "tag": "style", "parent": ".head", "extend": {
+                "class": ["addStyle2"],
+                "text": "ul {list-style: none;}"
+            }
+        }
+    ]
+}

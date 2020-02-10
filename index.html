@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head class="head">
+    <meta charset="UTF-8">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript" src="js/DataContainer.js"></script>
+    <script type="text/javascript" src="js/Connect.js"></script>
+    <script type="text/javascript" src="js/EventContainer.js"></script>
+    <title class="title">test</title>
+</head>
+<body class="body">
+    <div class="container">
+        <header class="header">
+            <h1 class="mainTitle">main title</h1>
+            <p class="subTitle">sub title</p>
+        </header>
+        <main class="main">
+            content
+        </main>
+        <footer class="footer">
+            <p class="copy">Copyright &copy; 2020 PoNIx2 All Rights Reserved.</p>
+        </footer>
+    </div>
+    <script>
+        const pageData = new DataContainer();
+        (function() {
+            pageData.set("events", new EventContainer(pageData));
+            pageData.get("events").loadEvent = function() {
+                pageData.get("events").readStyle("../json/style/addStyle_0000.json");
+                pageData.get("events").readContentG("../json/contents/contents_0000.json");
+                document.querySelector(".main").style.marginTop = document.querySelector(".header").clientHeight + "px";
+                document.querySelector(".main").style.marginBottom = document.querySelector(".footer").clientHeight + "px";
+            };
+            pageData.get("events").clickEvent = function(e) {
+                alert(e.target.dataset.click);
+            };
+            pageData.get("events").loadEvent();
+        })();
+    </script>
+</body>
+</html>
